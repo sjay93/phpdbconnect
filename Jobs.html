@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Jobs</title>
+	<link rel="stylesheet" type="text/css" href="javajam.css">
+	<script>
+	function applicationform_validate()
+	{
+	var name = document.applicationform.nameinput.value;
+	var email = document.applicationform.emailinput.value;
+	var textar = document.getElementById("expinput").value;
+	var afposition = email.indexOf("@");
+	var alposition = email.lastIndexOf("@");
+	var dlposition = email.lastIndexOf(".");
+	if((name == "") || (email == "") || (textar.length < 1))
+	{
+		alert("Details cannot be blank");
+	}
+	else if(name.charAt(0).toUpperCase() != name.charAt(0))
+	{
+		alert("First character of Name should be capitalized");
+	}
+	else if ((afposition < 1) || (dlposition < 1) || (dlposition >= email.length - 2) || (afposition != alposition) || (alposition >= dlposition))
+	{
+		alert("Please enter valid E-mail address");
+	}
+	else
+	{
+		alert("Form submitted successfully");
+		return true;
+	}
+		return false;
+	}
+	</script>
+</head>	
+
+<body id="wrapper">
+<div id="bgcolr">
+<table class="leftcolumn">
+<tr>
+<td><img alt="JavaJam Logo" src="javajamlogo.jpg"></td>
+</tr>
+<tr>
+<td><nav role="navigation">	
+	<a href="Index.html"><strong>Home</strong></a>
+	<a href="Menu.html"><strong>Menu</strong></a> 
+	<a href="Music.php"><strong>Music</strong></a>
+	<a href="Jobs.html"><strong>Jobs</strong></a> 
+</nav></td>
+</tr></table>
+
+<div id="mainpage">
+	<h1>JavaJam Coffee House</h1>
+	<div id = "colorgap"></div>
+<div class="indexpage">
+<h2>Jobs at JavaJam</h2>
+<p>
+Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk (*).
+</p>
+
+<table id = "jobstable">
+<tbody>
+<form method = "post" name="applicationform" onsubmit = "return applicationform_validate()">
+<tr>
+<td class = "tdrightalign">*Name:</td>
+<td><input type="text" name = "nameinput" placeholder="Name"></td>
+</tr>
+<tr>
+<td class = "tdrightalign">*E-mail: </td>
+<td><input type = "text" name = "emailinput" placeholder="Email Address"></td>
+</tr>
+<tr>
+<td class = "tdrightalign">*Experience:</td>
+<td><textarea id = "expinput" rows = "2" cols = "25" placeholder="Experience in 50 words"></textarea></td>
+</tr>
+<tr><td><input type="submit" value ="Apply Now" name = "applybutton"></td></tr>
+</form>
+</tbody></table>
+<br>
+</div>
+</div>
+<footer>
+	<i>Copyright &copy 2016 JavaJam Coffee House</i><br>
+	<a href="mailto:jay@shah.com"><i>jay@shah.com</i></a>
+</footer>
+</div>
+</body>
+</html>

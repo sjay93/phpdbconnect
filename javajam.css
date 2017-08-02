@@ -1,0 +1,156 @@
+body{
+    color: #221811;
+	font-family: Arial;
+    background-image: url("background.gif");
+    background-color: #FCEBB6;
+}
+
+h1{
+     background-color: #D2B48C; 
+     line-height : 200%;
+}
+
+.leftcolumn{
+	float: left;
+    width: 60px;
+}
+nav{ 
+
+     text-align: center;
+     font-weight:bold;
+}
+
+#wrapper {
+    width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+footer
+{
+    background-color: #D2B48C;
+     text-align: center;
+	 font-style: italic;
+     font-size: 0.60em;
+}
+ 
+ .textalign
+{
+	padding-left: 2.15em;
+}
+
+.texthead
+{
+	font-weight: bold
+}
+
+#bgcolr{
+ background: #231814;
+ 
+ }
+
+#mainpage h1{
+    padding-top: 15px;
+    padding-left: 10px;
+  text-align: left;
+      margin: 0;
+ }
+ 
+#mainpage{
+ background:#FCEBB6;
+ margin-left: 120px;
+ border-bottom: 1px solid;
+ }
+ 
+ .leftcolumn img{
+ height: 85px;
+ }
+ 
+.leftcolumn nav{
+ padding: 25px 30px;
+ color: #FCEBB6;
+ text-align: center;
+ }
+.leftcolumn nav a{
+   color: #FCEBB6;
+   text-decoration: none;
+   }
+
+.leftcolumn nav a:VISITED{
+   color: rgb(255, 205, 108);
+   text-decoration: none;
+   }
+   
+#javajam-address{
+ margin-left: 40px;
+}
+ 
+ .indexpage{
+ padding-left: 15px;
+ }
+ .indexpage h2{
+ margin-left: 70px;
+ }
+ .indexpage h3{
+ margin-left: 50px;
+ }
+ .indexpage p{
+ margin-left: 40px;
+ }
+ 
+ p{
+	 margin-left: 35px;
+ }
+ 
+ #musictext{
+ margin-left: 35px;
+ padding-left: 15px;
+ }
+ 
+ #mainpage-image{
+ height: 170px;
+ width: 100%;
+ }
+ 
+ .month{
+background: #D2B48C;
+border-bottom: 1px solid;
+padding-left: 40px;
+ }
+ 
+.musicdetails{
+ padding-left: 180px;
+
+ }
+.musicdetails td{
+	 vertical-align: top;
+	 padding-left: 10px;
+}
+.musicdetails img{
+height:50px; width:50px;;
+}
+
+.tdrightalign
+{
+	text-align: right;
+	vertical-align: text-top;
+}
+
+#colorgap
+{
+	width: auto;
+	height : 10px;
+	border-style: solid;
+	border-color: #231814;
+	background-color: #231814;
+}
+
+#jobstable
+{
+	text-indent: 25px;
+}
+
+#musicianphp
+{
+	text-align: center;
+}
